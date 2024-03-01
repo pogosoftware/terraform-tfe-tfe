@@ -1,1 +1,1 @@
-data "tfe_organization" "this" {}
+data "hcp_organization" "this" {}
