@@ -4,12 +4,14 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.7.0 |
+| <a name="requirement_hcp"></a> [hcp](#requirement\_hcp) | ~> 0.83 |
 | <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.52 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
+| <a name="provider_hcp"></a> [hcp](#provider\_hcp) | ~> 0.83 |
 | <a name="provider_tfe"></a> [tfe](#provider\_tfe) | ~> 0.52 |
 
 ## Modules
@@ -22,7 +24,7 @@ No modules.
 |------|------|
 | [tfe_variable.this](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/variable) | resource |
 | [tfe_variable_set.this](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/variable_set) | resource |
-| [tfe_organization.this](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/organization) | data source |
+| [hcp_organization.this](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/data-sources/organization) | data source |
 
 ## Inputs
 

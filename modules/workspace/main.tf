@@ -3,7 +3,7 @@
 ####################################################################################################
 resource "tfe_workspace" "this" {
   name                      = var.workspace
-  organization              = data.tfe_organization.this.name
+  organization              = data.hcp_organization.this.name
   project_id                = var.project_id
   queue_all_runs            = var.queue_all_runs
   allow_destroy_plan        = var.allow_destroy_plan

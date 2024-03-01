@@ -2,7 +2,7 @@ resource "tfe_variable_set" "this" {
   name          = var.name
   description   = var.description
   workspace_ids = var.workspace_ids
-  organization  = data.tfe_organization.this.name
+  organization  = data.hcp_organization.this.name
 }
 
 resource "tfe_variable" "this" {
