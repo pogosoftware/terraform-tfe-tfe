@@ -79,6 +79,7 @@ resource "tfe_variable" "this" {
   key          = each.key
   value        = each.value.value
   category     = lookup(each.value, "category", "terraform")
+  sensitive    = lookup(each.value, "sensitive", false)
   workspace_id = tfe_workspace.this.id
   description  = lookup(each.value, "description", "")
 }
