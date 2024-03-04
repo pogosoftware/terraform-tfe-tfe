@@ -11,6 +11,7 @@ resource "tfe_variable" "this" {
   key             = each.key
   value           = each.value.value
   category        = each.value.category
+  sensitive       = lookup(each.value, "sensitive", false)
   description     = lookup(each.value, "description", "")
   variable_set_id = tfe_variable_set.this.id
 }

@@ -32,7 +32,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_description"></a> [description](#input\_description) | The variable set description | `string` | `""` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of variable set | `string` | n/a | yes |
-| <a name="input_variables"></a> [variables](#input\_variables) | The variables assigned to the variable set | <pre>map(object({<br>    value       = string<br>    category    = string<br>    description = optional(string)<br>  }))</pre> | n/a | yes |
+| <a name="input_variables"></a> [variables](#input\_variables) | The variables assigned to the variable set | <pre>map(object({<br>    value       = string<br>    category    = string<br>    sensitive   = optional(bool)<br>    description = optional(string)<br>  }))</pre> | n/a | yes |
 | <a name="input_workspace_ids"></a> [workspace\_ids](#input\_workspace\_ids) | The ID's of workspace to attach variable set | `set(string)` | n/a | yes |
 
 ## Outputs

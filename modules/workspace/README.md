@@ -54,7 +54,7 @@ No modules.
 | <a name="input_vcs_repos"></a> [vcs\_repos](#input\_vcs\_repos) | Settings for the workspace's VCS repository | <pre>object({<br>    identifier = string<br>    branch     = string<br>  })</pre> | `null` | no |
 | <a name="input_working_directory"></a> [working\_directory](#input\_working\_directory) | A relative path that Terraform will execute within | `string` | `""` | no |
 | <a name="input_workspace"></a> [workspace](#input\_workspace) | The name of TFC workspace | `string` | n/a | yes |
-| <a name="input_workspace_variables"></a> [workspace\_variables](#input\_workspace\_variables) | The workspace variables | <pre>map(object({<br>    value       = string<br>    category    = string<br>    description = optional(string)<br>  }))</pre> | `{}` | no |
+| <a name="input_workspace_variables"></a> [workspace\_variables](#input\_workspace\_variables) | The workspace variables | <pre>map(object({<br>    value       = string<br>    category    = string<br>    sensitive   = optional(bool)<br>    description = optional(string)<br>  }))</pre> | `{}` | no |
 
 ## Outputs
 
