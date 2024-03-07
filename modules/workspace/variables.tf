@@ -26,6 +26,18 @@ variable "tag_names" {
   type        = list(string)
 }
 
+variable "auto_apply" {
+  default     = false
+  description = "Automatically apply changes when a Terraform plan is successful. If this workspace is linked to version control, a push to the default branch of the linked repository will trigger a plan and apply. Default to `false`"
+  type        = bool
+}
+
+variable "auto_apply_run_trigger" {
+  default     = false
+  description = "Run triggers create new plans whenever a specified source workspace completes an apply. This setting automatically applies these automatically created runs. Defaults to `false`"
+  type        = bool
+}
+
 variable "terraform_reqiured_version" {
   default     = "~>1.7.0"
   description = "The version of terraform required to run tasks. Defaults to `~> 1.7.0`"

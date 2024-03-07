@@ -13,6 +13,8 @@ resource "tfe_workspace" "this" {
   working_directory         = var.working_directory
   trigger_patterns          = var.trigger_patterns
   speculative_enabled       = var.speculative_enabled
+  auto_apply                = var.auto_apply
+  auto_apply_run_trigger    = var.auto_apply_run_trigger
 
   dynamic "vcs_repo" {
     for_each = var.vcs_repos == null ? [] : [var.vcs_repos]
