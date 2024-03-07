@@ -10,6 +10,7 @@ variable "description" {
 }
 
 variable "workspace_ids" {
+  default     = []
   description = "The ID's of workspace to attach variable set"
   type        = set(string)
 }

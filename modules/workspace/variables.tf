@@ -81,34 +81,3 @@ variable "variable_set_ids" {
   description = "The ID's of variable set to attach to the workspace"
   type        = map(string)
 }
-
-### AWS AUTH PROVIDER
-variable "aws_provider_auth" {
-  default     = false
-  description = "Determinate to inject AWS creadentials or not. Defaults to `false`"
-  type        = bool
-}
-
-variable "aws_region" {
-  default     = "eu-central-1"
-  description = "The name of AWS region"
-  type        = string
-}
-
-variable "aws_workload_identity_audience" {
-  default     = "aws.workload.identity"
-  description = "Will be used as the aud claim for the identity token. Required if `tfc_aws_provider_auth` is set to `true`. Defaults to `aws.workload.identity`"
-  type        = string
-}
-
-variable "aws_plan_role_arn" {
-  default     = null
-  description = "The ARN of the role to use for the plan phase of a run. Required if `tfc_aws_provider_auth` is set to `true`."
-  type        = string
-}
-
-variable "aws_apply_role_arn" {
-  default     = null
-  description = "The ARN of the role to use for the apply phase of a run.Required if `tfc_aws_provider_auth` is set to `true`."
-  type        = string
-}
