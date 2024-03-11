@@ -1,9 +1,9 @@
 output "id" {
   description = "The ID of workspace"
-  value       = tfe_workspace.this.id
+  value       = try(tfe_workspace.this[0].id, null)
 }
 
 output "name" {
   description = "The name of workspace"
-  value       = tfe_workspace.this.name
+  value       = try(tfe_workspace.this[0].name, null)
 }

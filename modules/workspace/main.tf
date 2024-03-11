@@ -2,6 +2,8 @@
 ### WORKSPACE
 ####################################################################################################
 resource "tfe_workspace" "this" {
+  count = var.create_workspace == true ? 1 : 0
+
   name                      = var.workspace
   organization              = data.hcp_organization.this.name
   project_id                = var.project_id
@@ -31,13 +33,13 @@ resource "tfe_workspace" "this" {
 ### VARIABLES
 ####################################################################################################
 resource "tfe_variable" "this" {
-  for_each = var.workspace_variables
+  for_each = { for k, v in var.workspace_variables : k => v if var.create_workspace == true }
 
   key          = each.key
   value        = each.value.value
   category     = lookup(each.value, "category", "terraform")
   sensitive    = lookup(each.value, "sensitive", false)
-  workspace_id = tfe_workspace.this.id
+  workspace_id = tfe_workspace.this[0].id
   description  = lookup(each.value, "description", "")
 }
 
@@ -45,8 +47,8 @@ resource "tfe_variable" "this" {
 ### VARIABLE SETS
 ####################################################################################################
 resource "tfe_workspace_variable_set" "hcp_cloud_workspace_hcp_credentials" {
-  for_each = var.variable_set_ids
+  for_each = { for k, v in var.variable_set_ids : k => v if var.create_workspace == true }
 
   variable_set_id = each.key
-  workspace_id    = tfe_workspace.this.id
+  workspace_id    = tfe_workspace.this[0].id
 }
