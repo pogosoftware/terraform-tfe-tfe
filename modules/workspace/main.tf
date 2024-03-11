@@ -11,7 +11,7 @@ resource "tfe_workspace" "this" {
   allow_destroy_plan        = var.allow_destroy_plan
   tag_names                 = var.tags
   terraform_version         = var.terraform_reqiured_version
-  remote_state_consumer_ids = var.share_state_with_workspace_ids
+  remote_state_consumer_ids = compact(var.share_state_with_workspace_ids)
   working_directory         = var.working_directory
   trigger_patterns          = var.trigger_patterns
   speculative_enabled       = var.speculative_enabled
