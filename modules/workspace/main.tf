@@ -4,14 +4,14 @@
 resource "tfe_workspace" "this" {
   count = var.create_workspace == true ? 1 : 0
 
-  name                      = var.workspace
+  name                      = var.name
   organization              = data.hcp_organization.this.name
   project_id                = var.project_id
   queue_all_runs            = var.queue_all_runs
   allow_destroy_plan        = var.allow_destroy_plan
-  tag_names                 = var.tag_names
+  tag_names                 = var.tags
   terraform_version         = var.terraform_reqiured_version
-  remote_state_consumer_ids = var.remote_state_consumer_ids
+  remote_state_consumer_ids = var.share_state_with_workspace_ids
   working_directory         = var.working_directory
   trigger_patterns          = var.trigger_patterns
   speculative_enabled       = var.speculative_enabled
