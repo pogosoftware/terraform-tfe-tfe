@@ -9,7 +9,7 @@ variable "project_id" {
   type        = string
 }
 
-variable "workspace" {
+variable "name" {
   description = "The name of TFC workspace"
   type        = string
 }
@@ -26,7 +26,7 @@ variable "allow_destroy_plan" {
   type        = bool
 }
 
-variable "tag_names" {
+variable "tags" {
   default     = []
   description = "The list of TFC workspace tags. Defaults to `[]`"
   type        = list(string)
@@ -50,7 +50,7 @@ variable "terraform_reqiured_version" {
   type        = string
 }
 
-variable "remote_state_consumer_ids" {
+variable "share_state_with_workspace_ids" {
   default     = null
   description = "The ID of workspace to share the terraform state with"
   type        = set(string)
