@@ -1,3 +1,9 @@
+variable "create_workspace" {
+  default     = true
+  description = "Determinate to create a workspace or not"
+  type        = bool
+}
+
 variable "project_id" {
   description = "The name of TFC project"
   type        = string

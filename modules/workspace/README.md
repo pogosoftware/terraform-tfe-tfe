@@ -35,6 +35,7 @@ No modules.
 | <a name="input_allow_destroy_plan"></a> [allow\_destroy\_plan](#input\_allow\_destroy\_plan) | Determinate to allow destroy play or not. Defaults to `false` | `bool` | `false` | no |
 | <a name="input_auto_apply"></a> [auto\_apply](#input\_auto\_apply) | Automatically apply changes when a Terraform plan is successful. If this workspace is linked to version control, a push to the default branch of the linked repository will trigger a plan and apply. Default to `false` | `bool` | `false` | no |
 | <a name="input_auto_apply_run_trigger"></a> [auto\_apply\_run\_trigger](#input\_auto\_apply\_run\_trigger) | Run triggers create new plans whenever a specified source workspace completes an apply. This setting automatically applies these automatically created runs. Defaults to `false` | `bool` | `false` | no |
+| <a name="input_create_workspace"></a> [create\_workspace](#input\_create\_workspace) | Determinate to create a workspace or not | `bool` | `true` | no |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The name of TFC project | `string` | n/a | yes |
 | <a name="input_queue_all_runs"></a> [queue\_all\_runs](#input\_queue\_all\_runs) | Determinates to queue all runs or not. Defaults to `false` | `bool` | `false` | no |
 | <a name="input_remote_state_consumer_ids"></a> [remote\_state\_consumer\_ids](#input\_remote\_state\_consumer\_ids) | The ID of workspace to share the terraform state with | `set(string)` | `null` | no |
