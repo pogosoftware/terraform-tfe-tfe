@@ -51,7 +51,7 @@ variable "terraform_reqiured_version" {
 }
 
 variable "share_state_with_workspace_ids" {
-  default     = null
+  default     = []
   description = "The ID of workspace to share the terraform state with"
   type        = set(string)
 }

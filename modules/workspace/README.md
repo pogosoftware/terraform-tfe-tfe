@@ -39,7 +39,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | The name of TFC workspace | `string` | n/a | yes |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The name of TFC project | `string` | n/a | yes |
 | <a name="input_queue_all_runs"></a> [queue\_all\_runs](#input\_queue\_all\_runs) | Determinates to queue all runs or not. Defaults to `false` | `bool` | `false` | no |
-| <a name="input_share_state_with_workspace_ids"></a> [share\_state\_with\_workspace\_ids](#input\_share\_state\_with\_workspace\_ids) | The ID of workspace to share the terraform state with | `set(string)` | `null` | no |
+| <a name="input_share_state_with_workspace_ids"></a> [share\_state\_with\_workspace\_ids](#input\_share\_state\_with\_workspace\_ids) | The ID of workspace to share the terraform state with | `set(string)` | `[]` | no |
 | <a name="input_speculative_enabled"></a> [speculative\_enabled](#input\_speculative\_enabled) | Indicates whether this workspace allows speculative plans | `bool` | `true` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | The list of TFC workspace tags. Defaults to `[]` | `list(string)` | `[]` | no |
 | <a name="input_terraform_reqiured_version"></a> [terraform\_reqiured\_version](#input\_terraform\_reqiured\_version) | The version of terraform required to run tasks. Defaults to `~> 1.7.0` | `string` | `"~>1.7.0"` | no |

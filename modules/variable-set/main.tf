@@ -1,7 +1,7 @@
 resource "tfe_variable_set" "this" {
   name          = var.name
   description   = var.description
-  workspace_ids = var.workspace_ids
+  workspace_ids = compact(var.workspace_ids)
   organization  = data.hcp_organization.this.name
 }
 
