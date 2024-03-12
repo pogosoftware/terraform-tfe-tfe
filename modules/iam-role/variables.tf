@@ -10,6 +10,12 @@ variable "aws_region" {
 ####################################################################################################
 ### TFE
 ####################################################################################################
+variable "create_iam_role" {
+  default     = true
+  description = "Determinate to create AWS IAM role or not"
+  type        = bool
+}
+
 variable "name_preffix" {
   description = "The name prefix of Terraform Cloud roles"
   type        = string

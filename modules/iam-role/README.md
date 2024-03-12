@@ -37,6 +37,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_apply_role_policy_json"></a> [apply\_role\_policy\_json](#input\_apply\_role\_policy\_json) | The IAM json policy for apply role | `string` | n/a | yes |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | The name of AWS region | `string` | `"eu-central-1"` | no |
+| <a name="input_create_iam_role"></a> [create\_iam\_role](#input\_create\_iam\_role) | Determinate to create AWS IAM role or not | `bool` | `true` | no |
 | <a name="input_name_preffix"></a> [name\_preffix](#input\_name\_preffix) | The name prefix of Terraform Cloud roles | `string` | n/a | yes |
 | <a name="input_plan_role_policy_json"></a> [plan\_role\_policy\_json](#input\_plan\_role\_policy\_json) | The IAM json policy for plan role | `string` | n/a | yes |
 | <a name="input_tfe_aws_workload_identity_audience"></a> [tfe\_aws\_workload\_identity\_audience](#input\_tfe\_aws\_workload\_identity\_audience) | Will be used as the aud claim for the identity token. Defaults to `aws.workload.identity` | `string` | `"aws.workload.identity"` | no |
