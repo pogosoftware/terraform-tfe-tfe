@@ -3,7 +3,29 @@ version: 2
 updates:
 # Terraform - One entry per thing we want to scan as per https://github.com/dependabot/dependabot-core/issues/649
   - package-ecosystem: "terraform"
-    directory: "/modules/**"
+    directory: "/modules/iam-role"
+    open-pull-requests-limit: 5
+    schedule:
+      interval: "weekly"
+    commit-message:
+      # Prefix all commit messages with "feat: "
+      prefix: "feat: Terraform "
+    reviewers:
+      - "@pogosoftware/devops"
+
+  - package-ecosystem: "terraform"
+    directory: "/modules/variable-set"
+    open-pull-requests-limit: 5
+    schedule:
+      interval: "weekly"
+    commit-message:
+      # Prefix all commit messages with "feat: "
+      prefix: "feat: Terraform "
+    reviewers:
+      - "@pogosoftware/devops"
+
+  - package-ecosystem: "terraform"
+    directory: "/modules/workspace"
     open-pull-requests-limit: 5
     schedule:
       interval: "weekly"
