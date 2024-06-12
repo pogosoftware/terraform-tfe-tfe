@@ -3,7 +3,9 @@ name: Pre-Commit
 on:
   pull_request:
     branches:
-      - develop
+      - main
+    paths:
+      - '**.tf'
 
 env:
   TERRAFORM_DOCS_VERSION: v0.17.0
