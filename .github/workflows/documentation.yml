@@ -3,7 +3,7 @@ name: Generate terraform docs
 on:
   pull_request:
     branches:
-      - develop
+      - main
     paths:
       - '**.tf'
 
