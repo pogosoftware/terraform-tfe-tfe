@@ -1,4 +1,4 @@
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!--- BEGIN_TF_DOCS --->
 ## Requirements
 
 | Name | Version |
@@ -50,4 +50,4 @@ No modules.
 |------|-------------|
 | <a name="output_apply_role_arn"></a> [apply\_role\_arn](#output\_apply\_role\_arn) | The ARN of IAM apply role |
 | <a name="output_plan_role_arn"></a> [plan\_role\_arn](#output\_plan\_role\_arn) | The ARN of IAM plan role |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!--- END_TF_DOCS --->
