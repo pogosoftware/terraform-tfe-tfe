@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '**.tf'
+      - '**.hcl'
 
 env:
   TERRAFORM_DOCS_VERSION: v0.17.0
