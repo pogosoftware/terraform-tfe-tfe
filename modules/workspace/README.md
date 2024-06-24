@@ -4,15 +4,15 @@
 | Name | Version |
 |------|---------|
 | terraform | ~> 1.8.0 |
-| hcp | ~> 0.83 |
-| tfe | ~> 0.52 |
+| hcp | 0.83 |
+| tfe | 0.52 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| hcp | ~> 0.83 |
-| tfe | ~> 0.52 |
+| hcp | 0.83 |
+| tfe | 0.52 |
 
 ## Inputs
 
