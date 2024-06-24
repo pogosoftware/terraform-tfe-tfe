@@ -5,14 +5,14 @@
 |------|---------|
 | terraform | ~> 1.8.0 |
 | hcp | 0.83 |
-| tfe | 0.52 |
+| tfe | 0.56.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | hcp | 0.83 |
-| tfe | 0.52 |
+| tfe | 0.56.0 |
 
 ## Inputs
 
