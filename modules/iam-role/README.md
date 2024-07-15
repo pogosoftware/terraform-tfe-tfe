@@ -4,14 +4,14 @@
 | Name | Version |
 |------|---------|
 | terraform | ~> 1.8.0 |
-| aws | 5.57.0 |
+| aws | 5.58.0 |
 | hcp | 0.94.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | 5.57.0 |
+| aws | 5.58.0 |
 | hcp | 0.94.0 |
 
 ## Inputs
