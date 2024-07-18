@@ -3,7 +3,7 @@
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 1.8.0 |
+| terraform | ~> 1.9 |
 | aws | 5.58.0 |
 | hcp | 0.94.1 |
 
