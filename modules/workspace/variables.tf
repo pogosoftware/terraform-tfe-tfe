@@ -95,7 +95,7 @@ variable "workspace_variables" {
 }
 
 variable "variable_set_ids" {
-  default     = {}
+  default     = []
   description = "The ID's of variable set to attach to the workspace"
-  type        = map(string)
+  type        = set(string)
 }
