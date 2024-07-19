@@ -30,7 +30,7 @@
 | tags | The list of TFC workspace tags. Defaults to `[]` | `list(string)` | `[]` | no |
 | terraform\_reqiured\_version | The version of terraform required to run tasks. Defaults to `~> 1.7.0` | `string` | `"~\u003e1.7.0"` | no |
 | trigger\_patterns | List of glob patterns that describe the files Terraform Cloud monitors for changes. Trigger patterns are always appended to the root directory of the repository | `list(string)` | `[]` | no |
-| variable\_set\_ids | The ID's of variable set to attach to the workspace | `map(string)` | `{}` | no |
+| variable\_set\_ids | The ID's of variable set to attach to the workspace | `set(string)` | `[]` | no |
 | vcs\_repos | Settings for the workspace's VCS repository | <pre>object({<br>    identifier = string<br>    branch     = string<br>  })</pre> | `null` | no |
 | working\_directory | A relative path that Terraform will execute within | `string` | `""` | no |
 | workspace\_variables | The workspace variables | <pre>map(object({<br>    value       = string<br>    category    = string<br>    sensitive   = optional(bool)<br>    description = optional(string)<br>  }))</pre> | `{}` | no |
