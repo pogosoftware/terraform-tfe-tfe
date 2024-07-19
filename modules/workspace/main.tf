@@ -47,8 +47,8 @@ resource "tfe_variable" "this" {
 ### VARIABLE SETS
 ####################################################################################################
 resource "tfe_workspace_variable_set" "hcp_cloud_workspace_hcp_credentials" {
-  for_each = [for v in var.variable_set_ids : v if var.create_workspace == true]
+  for_each = toset([for v in var.variable_set_ids : v if var.create_workspace == true])
 
-  variable_set_id = each.key
+  variable_set_id = each.value
   workspace_id    = tfe_workspace.this[0].id
 }
