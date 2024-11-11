@@ -4,14 +4,14 @@
 | Name | Version |
 |------|---------|
 | terraform | ~> 1.9 |
-| hcp | 0.97.0 |
+| hcp | 0.98.1 |
 | tfe | 0.60.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| hcp | 0.97.0 |
+| hcp | 0.98.1 |
 | tfe | 0.60.0 |
 
 ## Inputs
