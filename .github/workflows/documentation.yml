@@ -22,9 +22,9 @@ jobs:
         ref: ${{ github.event.pull_request.head.ref }}
 
     - name: Render terraform docs inside the README.md and push changes back to PR branch
-      uses: Dirrk/terraform-docs@v1.0.8
+      uses: terraform-docs/gh-actions@v1.3.0
       with:
-        tf_docs_find_dir: modules/
-        tf_docs_output_file: README.md
-        tf_docs_output_method: inject
-        tf_docs_git_push: 'true'
+        working-dir: .
+        output-file: README.md
+        output-method: inject
+        git-push: "true"
