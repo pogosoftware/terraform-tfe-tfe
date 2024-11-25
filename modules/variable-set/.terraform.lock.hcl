@@ -3,7 +3,7 @@
 
 provider "registry.terraform.io/hashicorp/hcp" {
   version     = "0.99.0"
-  constraints = "~> 0.99"
+  constraints = ">= 0.99.0, < 1.0.0"
   hashes = [
     "h1:ArQSjCnSt3h8wxgnxZHFvYdfV49JyRmNucWaylPiEAg=",
     "h1:MNr6YX7uLs0TnXOv4RQDXFpG1iApIEOL80nOIy+1no8=",
@@ -27,7 +27,7 @@ provider "registry.terraform.io/hashicorp/hcp" {
 
 provider "registry.terraform.io/hashicorp/tfe" {
   version     = "0.60.1"
-  constraints = "~> 0.60"
+  constraints = ">= 0.60.0, < 1.0.0"
   hashes = [
     "h1:FjssHRYHslQ4gKotg558ctb/HO1wvEb0j6vHLPJjUU8=",
     "h1:lSKqWuQtpHEtbaBKneVIsGWdZTq9yO+IexN3zZQSrpo=",
